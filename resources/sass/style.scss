@@ -1,0 +1,66 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+html, body{
+  overflow-x: hidden;
+}
+
+.container{
+	max-width: 1080px;
+	margin: auto;
+}
+.menu{
+	float: right;
+	margin-top: -49px; color: #fff;
+}
+.menu a{
+	text-decoration: none; color: #fff;
+	
+}	
+.menu ul li{
+	display: inline;
+  padding-right: 40px;
+	text-decoration: none;
+}
+nav{background-color:#216583;  font-family:Sans-serif;  padding-top: 2%;
+}
+
+.logo.h4{padding-left: 3em; }
+.jumbotron-content{padding-top: 150px; color: #fff; }
+.jumbotron{ background-color: #216583; height: 609px; clear: both;}
+.jumbotron h2  { font-size: 3em;  max-width: 13em; margin: auto; line-height: 45px; font-weight: 500;}
+.jumbotron h2 { text-align: center; }
+.jumbotron p{font-size: 14px; max-width: 39em; margin: auto; line-height: 25px; text-align: center;}
+.row{width: 100%; clear: both;}
+.col-3{width: 16,6%; float: left; padding: 12px; box-sizing: border-box; overflow: hidden;}
+.thumb{  width: 100%;}
+.col-2{width: 50%; float: left; padding: 12px; box-sizing: border-box; overflow: hidden;}
+h3{
+  float: center;
+}
+h1, h2{font-weight: 500; font-family: vidaloka;}
+.populer form{
+  margin: auto;
+}
+menu ul li a.tombol{
+	background-color: red;
+	width: 10%;
+	height: 3%;
+}
+#two{ margin-top: 180px; }
+#two h1{font-size: 24px; line-height: 35px; max-width: 231px; font-weight: 500;}
+#two p{margin-top: 45px; text-align: left; line-height: 32px; max-width: 450px; color: #888888;}
+#tri img{
+	margin-top: 215px;}
+#tri #text{margin-top: 300px;}
+#text p{font-size: 14px; color: #888888; margin-top: 50px; line-height: 32px; max-width: 302px;}
+#text h1 { font-family: vidaloka, sans-serif; font-size: 24px; max-width: 267px; color: #666666; line-height: 35px;  }
+.workingspace{background-image: url(../img/homepage/jumbotron-bg.png);height: 628px; margin-top: 69%;
+	}
+.col-4{width: 30%;float: left; padding: 12px; box-sizing: border-box; overflow: hidden; }
+.sub{color: #888888; display: inline; float: left;}
+.sub h2{max-width: 180px; line-height: 20px; font-size: 16px;}
+.sub p{font-size: 10px; max-width: 210px; }
+.workingspace .thumb{margin-top: -20px;}
