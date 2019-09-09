@@ -2,28 +2,45 @@
 <html>
 <head>
 	<title>home-page</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/home-responsive.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<script src="assets/js/jquery.js"></script>
+    <script src="assets/js/functions.js"></script>
 </head>
 <body>
 
 	<!--nav-->
-		<div class="container">	
-			<nav>
-				<div class="logo">
-					<a href="#"><img src="assets/img/homepage/logo-blue.svg" width="16%"></a>
-				</div>
-				<div class="menu">
-					<ul>
-						<li><a href="home-page.html">Home</a></li>
-						<li><a href="tentang.html">Tentang</a></li>
-						<li><a href="#">Kategori</a></li>
-						<li><a href="FAQ.html">FaQ</a></li>
-						<li><a href="login.html">Masuk</a></li>
-						<li><a href="#" class="tombol"></a>Daftar</li>
-					</ul>
-				</div>		
-			</nav>
+<section class="nav-bar">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="home-page.html"><img src="assets/img/homepage/logo-blue.svg"></a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+      <ul class="nav-list">
+        <li> <a href="home-page.html">Home</a></li>
+        <li><a href="tentang.html">Tentang</a> </li>
 
+      	<li> <a href="#">Kategori</a>
+          <ul class="nav-dropdown">
+            <li><a href="#">Semua</a></li>
+            <li><a href="#">Cerpen</a></li>
+            <li><a href="#">Novel</a></li>
+            <li><a href="#">Matematika</a></li>
+            <li><a href="#">Biografi</a></li>
+          </ul>
+        </li>
+
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="login.html">Masuk</a></li>
+        <li><a href="#" class="tombol">Daftar</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+	<!--ahir nav-->
 			<div class="home-head" >
 					<h1 >Baca Buku Dan Tingkatkan Nilai Sekolahmu</h1><br>
 					<p>dengam membaca di gleam kalian bisa mendapatkan poin dan tukarkan dengan nilai sekolah, kami bekerja sama dengan  gurumu untuk mewujudkannya !</p>
@@ -40,7 +57,7 @@
 
 			<!--genre populer-->
 			<div id="home-genre">
-				<span style="color: #928D8D; font-size: 24px; margin-left:12em; ">Genre populer</span><br><br>	
+				<p>Genre populer</p><br><br>	
 				<div id="genre-buku-populer">
 					<img src="assets/img/homepage/cerpen.png" width="180px">
 					<img src="assets/img/homepage/matematika.png" width="180px">
@@ -55,7 +72,7 @@
 		<div class="container">
 
 			<div id="home-buku-populer">
-				<span style="color: #666666; font-size: 24px; margin-left: 15em">Buku populer</span>
+				<p >Buku populer</p>
 				<div id="home-link">	
 					<a href="#" id="link">Semua</a> <a href="#" id="link">Cerpen</a> 
 					<a href="#" id="novel">Novel</a> <a href="#" id="link">Matematika</a> <a href="#"id="link">Biografi</a>
@@ -151,8 +168,8 @@
 					<h2>Fitur Dukungan Pembelajaran</h2><br><br>
 					<div class="row">
 						<div class="col-3">
-							<img src="assets/img/homepage/readed.svg" width="180px"><br>
-							<h4>Membaca lebih seru</h4><br><br>
+							<img src="assets/img/homepage/readed.svg" width="180px">
+							<h4>Membaca lebih seru</h4><br>	
 							<p>Membaca menjadi suatu kegiatan yang sangat bermanfaat. Salah satu manfaatnya yaitu mengembangkan kemampuan berpikir kritis.</p>
 
 						</div>
@@ -161,15 +178,15 @@
 							<h4>Fitur Gratis</h4><br>
 							<p>membaca lebih seru selain itu dengan fitur gratis agar para pembaca dapat menelusuri buku secara gratis disini</p>
 						</div>
-						<div class="col-3">
-							<img src="assets/img/homepage/koin.svg"width="180px"><br>
+						<div class="col-3" id="tukar_poin">
+							<img src="assets/img/homepage/koin.svg"width="160px"><br>
 							<h4>Tukar Nilai Dengan Poin</h4><br>
 							<p>membaca buku kini dapat mendapatkan poin dan jika poin itu terkumpul makan bisa ditukarkan dengan nilai remedial mu disekolah</p>
 						</div>
-					</div>	
-
-				</div>
-				<a href="#" id="lanjut">Lebih Lanjut</a>
+					</div>
+							<a href="#" id="lanjut">Lebih Lanjut</a>
+				</div><br>	
+			
 			</div>	
 		</section>
 
@@ -203,13 +220,6 @@
 					</div>	
 				</div>	
 				<div class="testimony_second">	
-					<div id="syafira">	
-						<img src="assets/img/homepage/syafira.png" class="poto">
-						<div class="comment">	
-							<h5>Syafira permata</h5><br>	
-							<p>	wow membaca disini menyenangkan ! ada soalnya lagi, keren....</p>
-						</div>
-					</div>	
 
 					<div id="yuki">	
 						<img src="assets/img/homepage/yuki.png" class="poto">
@@ -219,6 +229,15 @@
 						</div>
 					</div>
 				
+					<div id="syafira">	
+						<img src="assets/img/homepage/syafira.png" width="50px" class="poto">
+						<div class="comment">	
+							<h5>Syafira permata</h5><br>
+							<p>	wow membaca disini menyenangkan ! ada soalnya lagi, keren....</p>
+						</div>
+					</div>	
+
+					
 
 					<div id="sayyid">	
 						<img src="assets/img/homepage/sayyid.png" class="poto">
